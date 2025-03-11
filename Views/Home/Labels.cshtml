@@ -1,0 +1,71 @@
+@{
+    ViewData["Title"] = "Labels";
+}
+
+<body style="background-color: #F1F4FF">
+
+    <div class="d-flex flex-row m-4 mb-0 mt-5 gap-3">
+        <a asp-controller="Home" asp-action="Menu">
+            <img src="~/images/blue-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px;"
+                alt="Regresar" />
+        </a>
+        <h1 class="display-3 text-black fw-bold">Etiquetas</h1>
+    </div>
+    <p class="fs-5 text-black fw-normal m-4 mt-0 mb-3">Introduzca los datos para la generación de etiquetas:</p>
+
+    <div class="m-3 mb-4 p-4 pt-2 rounded-5" style="background-color: #000225; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+        <form class="pt-4 g-2" style="position: relative;">
+            <div class="row align-items-center">
+                <div class="col-8">
+                    <div class="form-floating" style="box-shadow: 5px 9px 10px rgba(130, 138, 162, 0.163)">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Clave</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0 w-100"
+                        style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 9px 10px rgba(130, 138, 162, 0.163)">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="fs-6 text-center" style="color: #25EAE0">Nombre del producto</p>
+                </div>
+            </div>
+        </form>
+
+        <form class="pt-2" style="position: relative;">
+            <div class="form-floating mb-3" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Factura</label>
+            </div>
+            <div class="form-floating mb-3" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Lote</label>
+            </div>
+            <div class="form-floating mb-3" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Fecha de empaque</label>
+            </div>
+            <div class="form-floating mb-3" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Caducidad</label>
+            </div>
+            <div class="form-floating mb-3" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Presentación</label>
+            </div>
+            <div class="form-floating mb-4" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Número de cajas</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-4 fw-semibold fs-5 border-0"
+                style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                Imprimir etiquetas
+            </button>
+        </form>
+    </div>
+</body>

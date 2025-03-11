@@ -1,0 +1,160 @@
+.circle-container {
+    height: 65vh;
+}
+
+.logo {
+    width: 310px; 
+    padding-top: 170px;
+}
+
+.div-logo {
+    width: 700px; 
+    height: 500px; 
+    border-radius: 50%; 
+    box-shadow: 5px 20px 50px rgba(135, 152, 204, 0.163); 
+    background: linear-gradient(to top, #F1F4FF, #FFFFFF); 
+    top: 0%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.form-container {
+    margin-top: -150px; 
+    padding: 38px;
+}
+
+@media (max-width: 576px) {
+    .circle-container {
+        height: 50vh;
+    }
+    
+    .logo {
+        width: 290px; 
+        padding-top: 270px;
+    }
+
+    .div-logo {
+        width: 600px;
+        top: -15%; 
+    }
+}
+
+@media (min-width: 576px) {
+    .circle-container {
+        height: 55vh;
+    }
+    
+    .logo {
+        width: 400px; 
+        padding-top: 210px;
+    }
+
+    .div-logo {
+        width: 800px;
+        top: -5%; 
+    }
+
+    .form-container {
+        padding: 65px;
+    }
+}
+
+@media (min-width: 768px) {
+    .circle-container {
+        height: 55vh;
+    }
+    
+    .logo {
+        width: 400px; 
+        padding-top: 170px;
+    }
+
+    .div-logo {
+        width: 1000px;
+        top: 5%; 
+    }
+
+    .form-container {
+        padding: 65px;
+    }
+}
+
+@media (min-width: 768px) {
+    .circle-container {
+        height: 55vh;
+    }
+    
+    .logo {
+        width: 400px; 
+        padding-top: 170px;
+    }
+
+    .div-logo {
+        width: 1000px;
+        top: 5%; 
+    }
+
+    .form-container {
+        padding: 65px;
+    }
+}
+
+@media (min-width: 992px) {
+    .circle-container {
+        height: 45vh;
+    }
+    
+    .logo {
+        width: 500px; 
+        padding-top: 150px;
+    }
+
+    .div-logo {
+        width: 1300px;
+        top: 15%; 
+    }
+
+    .form-container {
+        padding: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .circle-container {
+        height: 37vh;
+    }
+    
+    .logo {
+        width: 550px; 
+        padding-top: 150px;
+    }
+
+    .div-logo {
+        width: 1500px;
+        top: 15%; 
+    }
+
+    .form-container {
+        padding: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .circle-container {
+        height: 30vh;
+    }
+    
+    .logo {
+        width: 500px; 
+        padding-top: 180px;
+    }
+
+    .div-logo {
+        width: 1750px;
+        top: 20%; 
+    }
+
+    .form-container {
+        padding: 250px;
+    }
+}

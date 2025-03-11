@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Menu";
+}
+<div class="container-fluid w-100 m-0 p-0">
+    <div class="d-flex flex-row  m-4 mt-5 gap-3">
+        <a asp-controller="Home" asp-action="Warehouses">
+            <img src="~/images/white-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px; box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)"
+                alt="Regresar" />
+        </a>
+        <h1 class="display-3 text-white text-center fw-semibold" style="box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)">Menú</h1>
+    </div>
+
+    <div class="rounded-top-5 pt-3" style="background-color: #F1F4FF; height: 87vh;">
+        <div class="d-flex justify-content-center p-3">
+            <div class="row w-100 gap-2">
+                <div class="col p-0">
+                    <a asp-controller="Home" asp-action="Labels"
+                        class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
+                        <img src="~/images/label.png" class="mb-2" style="width: 70px;" alt="Etiquetas" />
+                        <span class="text-white fw-semibold fs-4 w-100">Etiquetas</span>
+                    </a>
+                    <a asp-controller="Home" asp-action="Orders"
+                        class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
+                        <img src="~/images/orders.png" class="mb-2" style="width: 70px;" alt="Pedidos" />
+                        <span class="text-white fw-semibold fs-4 w-100">Pedidos</span>
+                    </a>
+                    <a asp-controller="Home" asp-action="Queries"
+                        class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
+                        <img src="~/images/queries.png" class="mb-2" style="width: 70px;" alt="Consultas" />
+                        <span class="text-white fw-semibold fs-4 w-100">Consultas</span>
+                    </a>
+                </div>
+
+                <div class="col p-0">
+                    <a asp-controller="Home" asp-action="Entries"
+                        class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
+                        <img src="~/images/entry.png" class="mb-2" style="width: 70px;" alt="Entradas" />
+                        <span class="text-white fw-semibold fs-4 w-100">Entradas</span>
+                    </a>
+                    <a asp-controller="Home" asp-action="Deliveries"
+                        class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)" asp-controller="Menu" asp-action="Deliveries">
+                        <img src="~/images/exits.png" class="mb-2" style="width: 70px;" alt="Salidas" />
+                        <span class="text-white fw-semibold fs-4 w-100">Entregas</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

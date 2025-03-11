@@ -1,0 +1,124 @@
+@{
+    ViewData["Title"] = "Deliveries";
+}
+
+<body style="background-color: #F1F4FF">
+    <div class="d-flex flex-row m-4 mb-0 mt-5 gap-3">
+        <a asp-controller="Home" asp-action="Menu">
+            <img src="~/images/blue-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px;"
+                alt="Regresar" />
+        </a>
+        <h1 class="display-3 fw-bold" style="color: #000225;">Entregas</h1>
+    </div>
+
+    <div class="m-4 mt-3">
+
+        <div class="p-3 rounded-4" style="background-color: #000225; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+            <form class="g-2">
+                <p class="text-white fs-5 mt-2">Escanee el número de entrega</p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                    <div class="form-floating w-75" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                        <input type="text" class="form-control" id="barcodeInput" placeholder="">
+                        <label for="barcodeInput">Número de pedido</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0"
+                        style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+
+            <table class="table mt-2" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <thead>
+                    <tr>
+                        <th scope="col" style="background-color: #F1F4FF;">Código</th>
+                        <th scope="col" style="background-color: #F1F4FF;">Descripción</th>
+                        <th scope="col" style="background-color: #F1F4FF;">Kg^v</th>
+                        <th scope="col" style="background-color: #F1F4FF;">Car</th>
+                        <th scope="col" style="background-color: #F1F4FF;">OP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Código 1</th>
+                        <td>Producto 1</td>
+                        <td>kg</td>
+                        <td>car</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Código 2</th>
+                        <td>Producto 2</td>
+                        <td>kg</td>
+                        <td>car</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Código 3</th>
+                        <td>Producto 3</td>
+                        <td>kg</td>
+                        <td>car</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rounded-4 p-3 mt-4" style="background-color: #000225; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+            <p class="text-white fs-5 mt-2">Tarimas a tomar</p>
+            <table class="table table-borderless mt-2" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                <tbody>
+                    <tr>
+                        <td>Identificador de tarima 1</th>
+                    </tr>
+                    <tr>
+                        <td>Identificador de tarima 2</th>
+                    </tr>
+                    <tr>
+                        <td>Identificador de tarima 3</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div class="mt-4">
+                <form class="g-2">
+                    <div class="d-flex flex-row align-items-center gap-2">
+                        <div class="form-floating w-75" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                            <input type="text" class="form-control" id="barcodeInput" placeholder="">
+                            <label for="barcodeInput">Tarima</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0"
+                            style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-around mt-4 gap-2">
+            <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0 w-50"
+                style="background: linear-gradient(to top, #780303, #d11b1b); color: #FFFFFF; height: 6vh; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+                Cancelar
+            </button>
+            <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0 w-50"
+                style="background: linear-gradient(to top, #12775a, #25ea9f); color: #FFFFFF; height: 6vh; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+                Validar
+            </button>
+        </div>
+    </div>
+
+</body>

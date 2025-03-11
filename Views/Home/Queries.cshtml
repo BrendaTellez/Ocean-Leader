@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Queries";
+}
+
+<body style="background-color: #F1F4FF;">
+    <div class="d-flex flex-row m-4 mb-0 mt-5 gap-3">
+        <a asp-controller="Home" asp-action="Menu">
+            <img src="~/images/blue-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px;"
+                alt="Regresar" />
+        </a>
+        <h1 class="display-3 fw-bold" style="color: #000225;">Consultar tarima</h1>
+    </div>
+
+    <div class="rounded-4 p-4 m-4" style="background-color: #000225; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+        <form class="g-2">
+            <p class="text-white fs-5 mt-2">Escanee el código de barras de la tarima</p>
+            <div class="d-flex flex-row align-items-center gap-2">
+                <div class="form-floating w-75" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                    <input type="text" class="form-control" id="barcodeInput" placeholder="">
+                    <label for="barcodeInput">Código de barras de la tarima</label>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-4 fw-semibold fs-5 border-0"
+                    style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+                    Enviar
+                </button>
+            </div>
+        </form>
+
+        <table class="table mt-4" style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+            <tbody>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">Producto</th>
+                    <td>Código 1</th>
+                </tr>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">kg</th>
+                    <td>Código 2</th>
+                </tr>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">Cantidad</th>
+                    <td>Código 3</th>
+                </tr>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">Lote</th>
+                    <td>Código 4</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">Fecha de caducidad</th>
+                    <td>Código 4</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="background-color: #F1F4FF;">Fecha de entrada</th>
+                    <td>Código 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
