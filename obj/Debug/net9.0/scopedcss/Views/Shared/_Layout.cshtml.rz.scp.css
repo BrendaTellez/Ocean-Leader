@@ -46,3 +46,25 @@ button.accept-policy[b-5i9o3bwgxm] {
   white-space: nowrap;
   line-height: 0px;
 }
+
+@media (min-width: 100px) {
+  .container[b-5i9o3bwgxm], .container-lg[b-5i9o3bwgxm], .container-md[b-5i9o3bwgxm], .container-sm[b-5i9o3bwgxm], .container-xl[b-5i9o3bwgxm], .container-xxl .container-fluid[b-5i9o3bwgxm] {
+    max-width: 2000px !important; 
+    width: auto !important; 
+    --bs-gutter-x: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+.container-fluid[b-5i9o3bwgxm] {
+  max-width: 100% !important;
+  --bs-gutter-x: 0rem !important;
+  padding: 0rem !important;
+}
+
+.body[b-5i9o3bwgxm] {
+  padding-right: 0 !important;
+    padding-left: 0 !important;
+  margin: 0 !important;
+}

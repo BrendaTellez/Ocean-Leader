@@ -2,9 +2,18 @@
     ViewData["Title"] = "Labels";
 }
 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/labels.css" />
+</head>
+
 <body style="background-color: #F1F4FF">
 
-    <div class="d-flex flex-row m-4 mb-0 mt-5 gap-3">
+    <div class="d-flex flex-row align-items-center m-4 mb-0 mt-5 gap-3">
         <a asp-controller="Home" asp-action="Menu">
             <img src="~/images/blue-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px;"
                 alt="Regresar" />
@@ -13,7 +22,7 @@
     </div>
     <p class="fs-5 text-black fw-normal m-4 mt-0 mb-3">Introduzca los datos para la generación de etiquetas:</p>
 
-    <div class="m-3 mb-4 p-4 pt-2 rounded-5" style="background-color: #000225; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)">
+    <div class="blue-container mb-4 pt-2 rounded-5">
         <form class="pt-4 g-2" style="position: relative;">
             <div class="row align-items-center">
                 <div class="col-8">
@@ -69,3 +78,5 @@
         </form>
     </div>
 </body>
+
+</html>

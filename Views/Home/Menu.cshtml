@@ -1,19 +1,30 @@
 @{
     ViewData["Title"] = "Menu";
 }
-<div class="container-fluid w-100 m-0 p-0">
-    <div class="d-flex flex-row  m-4 mt-5 gap-3">
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/menu.css" />
+</head>
+
+<body class="d-flex container-fluid w-100 h-100 m-0 p-0">
+    <div class="d-flex flex-row align-items-center m-4 mt-5 gap-3">
         <a asp-controller="Home" asp-action="Warehouses">
-            <img src="~/images/white-arrow.png" class="img-fluid align-items-center" style="width: 40px; height: 40px; box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)"
-                alt="Regresar" />
+            <img src="~/images/white-arrow.png" class="img-fluid align-items-center"
+                style="width: 40px; height: 40px; box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)" alt="Regresar" />
         </a>
-        <h1 class="display-3 text-white text-center fw-semibold" style="box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)">Menú</h1>
+        <h1 class="display-3 text-white text-center fw-semibold"
+            style="box-shadow: 5px 14px 10px rgba(130, 138, 162, 0.05)">Menú</h1>
     </div>
 
-    <div class="rounded-top-5 pt-3" style="background-color: #F1F4FF; height: 87vh;">
+    <div class="rounded-top-5 pt-3 h-100" style=" height: auto; background-color: #F1F4FF; height: 87vh;">
         <div class="d-flex justify-content-center p-3">
-            <div class="row w-100 gap-2">
-                <div class="col p-0">
+            <div class="flex-direction row w-100 gap-2 gap-lg-5 flex-wrap justify-content-center">
+                <div class="col-5 col-lg-3 p-0 mx-md-5">
                     <a asp-controller="Home" asp-action="Labels"
                         class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
                         style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
@@ -34,7 +45,7 @@
                     </a>
                 </div>
 
-                <div class="col p-0">
+                <div class="col-5 col-lg-3 p-0">
                     <a asp-controller="Home" asp-action="Entries"
                         class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
                         style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)">
@@ -43,7 +54,8 @@
                     </a>
                     <a asp-controller="Home" asp-action="Deliveries"
                         class="d-flex flex-column align-items-center btn btn-primary rounded-5 border border-info border-start-0 w-100 p-4 mb-4"
-                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)" asp-controller="Menu" asp-action="Deliveries">
+                        style="background-color: #000225; box-shadow: 5px 20px 20px rgba(1, 7, 27, 0.227)"
+                        asp-controller="Menu" asp-action="Deliveries">
                         <img src="~/images/exits.png" class="mb-2" style="width: 70px;" alt="Salidas" />
                         <span class="text-white fw-semibold fs-4 w-100">Entregas</span>
                     </a>
@@ -51,4 +63,5 @@
             </div>
         </div>
     </div>
-</div>
+
+</html>

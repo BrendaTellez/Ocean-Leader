@@ -46,3 +46,25 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 0px;
 }
+
+@media (min-width: 100px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl .container-fluid {
+    max-width: 2000px !important; 
+    width: auto !important; 
+    --bs-gutter-x: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  --bs-gutter-x: 0rem !important;
+  padding: 0rem !important;
+}
+
+.body {
+  padding-right: 0 !important;
+    padding-left: 0 !important;
+  margin: 0 !important;
+}

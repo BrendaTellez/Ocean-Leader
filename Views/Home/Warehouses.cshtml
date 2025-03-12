@@ -11,24 +11,24 @@
     <link rel="stylesheet" href="~/css/warehouses.css" />
 </head>
 
-<body class="overflow-x-hidden" style="background-color: #F1F4FF; overflow: hidden; position: relative;">
+<body class="overflow-hidden" style="background-color: #F1F4FF; overflow: hidden; position: relative;">
 
-    <div class="overflow-x-hidden w-75">
-        <div class="blue-circle overflow-x-hidden"></div>
+    <div class="container-blue-circle container-fluid overflow-hidden">
+        <div class="blue-circle overflow-hidden"></div>
     </div>
 
 
-    <div class="m-4 mt-5 position-relative w-100" style="z-index: 1;">
+    <div class="m-4 mt-5 position-relative" style="z-index: 1;">
         <h1 class="display-3 text-white fw-semibold pb-4">Almacenes</h1>
 
         <a asp-controller="Home" asp-action="Menu"
-            class="card text-decoration-none mt-5 mb-4 p-2 justify-content-center rounded-4"
-            style="height: 11vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
+            class="card h-auto text-decoration-none mt-5 mb-4 p-2 justify-content-center rounded-4"
+            style="box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
             <div class="row g-0">
-                <div class="col-3">
+                <div class="col-3 col-lg-1">
                     <img src="~/images/ocean-leader-logo.png" class="img-fluid" alt="Logo de Ocean Leader">
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-lg-10 align-content-center">
                     <div class="card-body">
                         <h5 class="card-title mb-0">Ocean Leader</h5>
                     </div>
@@ -40,13 +40,13 @@
         </a>
 
         <a asp-controller="Home" asp-action="Menu"
-            class="card text-decoration-none mb-4 p-2 justify-content-center rounded-4"
+            class="card h-auto text-decoration-none mb-4 p-2 justify-content-center rounded-4"
             style="height: 11vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
             <div class="row g-0">
-                <div class="col-3 align-content-center">
+                <div class="col-3 col-lg-1 align-content-center">
                     <img src="~/images/ocean-leader-logo.png" class="img-fluid" alt="Logo de Ocean Leader">
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-lg-10 align-content-center">
                     <div class="card-body">
                         <h5 class="card-title mb-0">Mar y Tierra</h5>
                     </div>
@@ -58,13 +58,13 @@
         </a>
 
         <a asp-controller="Home" asp-action="Menu"
-            class="card text-decoration-none mb-4 p-2 justify-content-center rounded-4"
+            class="card h-auto text-decoration-none mb-4 p-2 justify-content-center rounded-4"
             style="height: 11vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
             <div class="row g-0">
-                <div class="col-3 align-content-center">
+                <div class="col-3 col-lg-1 align-content-center">
                     <img src="~/images/ocean-leader-logo.png" class="img-fluid" alt="Logo de Ocean Leader">
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-lg-10 align-content-center">
                     <div class="card-body">
                         <h5 class="card-title mb-0">Mariscos Mexicanos</h5>
                     </div>
@@ -76,13 +76,13 @@
         </a>
 
         <a asp-controller="Home" asp-action="Menu"
-            class="card text-decoration-none mb-5 p-2 justify-content-center rounded-4"
+            class="card h-auto text-decoration-none mb-5 p-2 justify-content-center rounded-4"
             style="height: 11vh; box-shadow: 5px 10px 10px rgba(130, 138, 162, 0.163)">
             <div class="row g-0">
-                <div class="col-3 align-content-center">
-                    <img src="~/images/ocean-leader-logo.png" class="img-fluid" alt="Logo de Ocean Leader">
+                <div class="col-3 col-lg-1 align-content-center">
+                    <img src="~/images/ocean-leader-logo.png" class="img-fluid " alt="Logo de Ocean Leader">
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-lg-10 align-content-center">
                     <div class="card-body">
                         <h5 class="card-title mb-0">Jig Líderes</h5>
                     </div>
@@ -93,7 +93,7 @@
             </div>
         </a>
 
-        <a type="submit" class="btn btn-primary w-100 rounded-4 fw-semibold fs-5 border-0 mt-4"
+        <a type="submit" class="btn btn-primary w-100 rounded-4 fw-semibold fs-5 border-0 mt-4 mt-lg-0"
             style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; box-shadow: 5px 14px 10px rgba(1, 7, 27, 0.227)"
             asp-controller="Home" asp-action="Index">
             Cerrar sesión

@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\brend\\.nuget\\packages\\": {}
+    "C:\\Users\\letic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brend\\OneDrive\\Documents\\DWIT\\Ocean Leader\\OceanLeader\\OceanLeader.csproj",
+      "projectUniqueName": "C:\\Users\\letic\\OneDrive\\Documentos\\Brenda\\Ocean-Leader\\OceanLeader.csproj",
       "projectName": "OceanLeader",
-      "projectPath": "C:\\Users\\brend\\OneDrive\\Documents\\DWIT\\Ocean Leader\\OceanLeader\\OceanLeader.csproj",
-      "packagesPath": "C:\\Users\\brend\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brend\\OneDrive\\Documents\\DWIT\\Ocean Leader\\OceanLeader\\obj\\",
+      "projectPath": "C:\\Users\\letic\\OneDrive\\Documentos\\Brenda\\Ocean-Leader\\OceanLeader.csproj",
+      "packagesPath": "C:\\Users\\letic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\letic\\OneDrive\\Documentos\\Brenda\\Ocean-Leader\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\brend\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\letic\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

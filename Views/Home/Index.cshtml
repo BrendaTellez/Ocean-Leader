@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="~/css/Index.css" />
 </head>
 
-<body class="container-fluid w-100 m-0 p-0 d-flex flex-column align-items-center justify-content-center position-relative">
+<body class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative">
 
-    <div class="circle-container position-relative w-100">
+    <div class="container-fluid circle-container position-relative overflow-hidden">
         <div class="div-logo d-flex justify-content-center align-items-center position-absolute">
-            <img src="~/images/ocean-leader-logo.png" class="logo img-fluid"
-                alt="Logo de Ocean Leader" />
+            <img src="~/images/ocean-leader-logo.png" class="logo img-fluid" alt="Logo de Ocean Leader" />
         </div>
     </div>
 
@@ -34,7 +33,9 @@
                     <input type="password" class="form-control" id="floatingInputPassword" placeholder="">
                     <label for="floatingPassword">Contraseña</label>
                 </div>
-                <button type="submit" class="btn w-100 rounded-4 fw-semibold fs-5 mb-4 mt-4 border-0" style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; border: none; box-shadow: 5px 20px 30px rgba(130, 138, 162, 0.163)" asp-controller="Home" asp-action="Warehouses">
+                <button type="submit" class="btn w-100 rounded-4 fw-semibold fs-5 mb-4 mt-4 border-0"
+                    style="background: linear-gradient(to top, #12776B, #25EAE0); color: #FFFFFF; height: 6vh; border: none; box-shadow: 5px 20px 30px rgba(130, 138, 162, 0.163)"
+                    asp-controller="Home" asp-action="Warehouses">
                     Iniciar sesión
                 </button>
                 <p class="text-white">¿Olvidaste tu contraseña?</p>
@@ -43,4 +44,5 @@
     </div>
 
 </body>
+
 </html>
